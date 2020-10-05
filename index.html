@@ -9,7 +9,16 @@
     <title>Document</title>
 </head>
 <body>
+    <h1>Salary Calculator:</h1>
+    <h2>Add employee:</h2>
     <div id="employeeForm">
+        <tableHeader>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>id Number</th>
+            <th>Title</th>
+            <th>Annual Salary</th>
+        </tableHeader>
         <label htmlFor="firstName">First name:</label>
         <input id="firstName" type="text" placeholder="First name"/>
 
@@ -22,12 +31,23 @@
         <label htmlFor="title">Title:</label>
         <input id="title" type="text" placeholder="title"/>
 
-        <label htmlFor="salary">Salary:</label>
+        <label htmlFor="salary">Annual salary:</label>
         <input id="salary" type="number" placeholder="salary"/>
 
         <button id="submitForm">Submit</button>
+        <table>
+            <tableHeader>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>id Number</th>
+            <th>Title</th>
+            <th>Annual Salary</th>
+        </tableHeader>
+        <tbody  id="employeeAdd"></tbody>
+    </table>        
 
-        <ul id="employeeAdd"></ul>
+        <h4>Monthly Costs:</h4>
+        <ul id="monthlyCosts"></ul>
     </div>
     
 </body>
